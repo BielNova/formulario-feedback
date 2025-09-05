@@ -110,7 +110,7 @@ $generalFeedback
 
     // Destinatários
     $mail->setFrom('gabrielassefnova@gmail.com', 'Formulário Valença Química');
-    $mail->addAddress('leonardo@valencaquimica.com.br', 'Destinatário'); // Para quem o e-mail será enviado
+    $mail->addAddress('gabrielassefnova@gmail.com', 'Destinatário'); // Para quem o e-mail será enviado
     if (!empty($email) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $mail->addReplyTo($email, $contactName);
     }
